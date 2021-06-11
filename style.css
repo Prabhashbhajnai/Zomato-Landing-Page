@@ -1,0 +1,62 @@
+*{                                          /* Remove browser defaults */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;                 /* Box Model */
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background-color: #ebf2ff;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;                            /* Get logo and order in same line */
+    justify-content: space-around;                 /* Gives space between the logo and order button */
+    
+}
+
+.navbar_brand{
+    width: 100px;
+}
+
+.navbar_logo{
+    width: 100%;
+}
+
+.nav_item{                                              /* Order Button */
+    background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+    );
+
+    color: #ffff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.nav_item:hover{
+    border: 2px solid #dd2476;
+}
+
+@media (min-width: 765px) {                         /* Media query for tab */
+    
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+}
+
+@media (min-width: 1020px){                         /* Media query for laptop screen */
+    .navbar_brand{
+        width: 150px;
+    }
+    .nav_item{
+        padding: 20px;
+        font-size: 20px;
+    }
+}
