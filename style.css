@@ -105,10 +105,100 @@ body{
     padding: 15px;
 }
 
-/* .food_card_description{
-    background-color: white;
+/* Flexxxx */
+
+.restaurant_text{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
 }
- */
+
+.restaurant_images_container{
+    width: 100%;
+}
+
+.restaurant_images_row_one, .restaurant_images_row_two{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.restaurant_images_row_one{
+    align-items: baseline;                  /* Align items in base */
+    margin-bottom: 3px;
+}
+
+.restaurant_images_1, .restaurant_images_4{
+    width: 100%;
+    height: 120px;
+}
+.restaurant_images_2, .restaurant_images_3{
+    width: 120%;
+    height: 200px;
+}
+
+.restaurant_1, .restaurant_2, .restaurant_3, .restaurant_4{
+    width: 100%;
+    height: 100%;
+}
+
+.form_container{
+    width: 100%;
+    text-align: center;
+}
+.form_text{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+input{
+    width: 50%;
+    padding: 5px;
+}
+.submit_button{
+    background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+    );
+
+    color: #ffff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.image_quote{
+    width: 100%;
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.bg_img{
+    width: 100%;
+    
+}
+.empty_restaurant{
+    width: 100%;
+    height: 250px;
+    border-radius: 6px;
+    filter: blur(4px);
+    position: absolute;
+    z-index: -3;
+}
+.quote{
+    width: 100%;
+    color: white;
+    position: absolute;
+    margin:80px;
+    text-align: center;
+}
+
 @media (min-width: 765px) {                         /* Media query for tab */
     
     .navbar{
@@ -154,8 +244,42 @@ body{
         #ff512f 100%
         );
 
-        transform: skewY(-5deg);                    /* Makes the parallelogram */
+        transform: skewY(-3deg);                    /* Makes the parallelogram */
         z-index: -3;                                /* negetive z-index puts it behind the card */
+    }
+    .restaurant_container{
+        display: flex;
+        align-items: center;
+    }
+    .restaurant_text{
+        width: 100%;
+        font-size: 40px;
+    }
+    input{
+        width: 25%;
+        padding: 5px;
+    }
+    .submit_button{
+        background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+        );
+    
+        color: #ffff;
+        border: none;
+        padding: 10px 25px 10px 25px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .quote{
+        width: 100%;
+        color: white;
+        position: absolute;
+        margin:120px;
+        text-align: center;
     }
 }
 
